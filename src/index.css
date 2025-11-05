@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global */
+html { scroll-behavior: smooth; }
+
+:root {
+  --bg: #05050a;
+  --fg: #f5f5f7;
+  --muted: #b9b9c6;
+
+  /* anime neon purple scale */
+  --accent-300: #b191ff;
+  --accent-500: #9e77ff;
+  --accent-600: #8b5cf6;
+  --accent-800: #5b21b6;
+
+  --card: rgba(17, 17, 27, 0.6);
+  --nav: rgba(10, 10, 18, 0.6);
+}
+
+/* Light theme override */
+.theme-light {
+  --bg: #f7f7fb;
+  --fg: #0f0f14;
+  --muted: #5a5a68;
+
+  --card: rgba(255, 255, 255, 0.8);
+  --nav: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* subtle link glow */
+a:hover { text-shadow: 0 0 10px var(--accent-500), 0 0 22px var(--accent-800); }
+
+/* Signature Styling */
+.signature-img {
+  filter: brightness(0) invert(1) drop-shadow(0 0 8px var(--accent-500));
+  transition: filter 0.3s ease;
+}
+
+.theme-light .signature-img {
+  filter: brightness(0.2) contrast(2);
+}
+
+.signature-img:hover {
+  transform: scale(1.05);
+  filter: brightness(0) invert(1) drop-shadow(0 0 12px var(--accent-500));
+  transition: all 0.3s ease;
+}
+
+
+/* reveal animations */
+.reveal{
+  opacity:0; transform:translateY(12px) scale(.98); filter:blur(4px);
+  transition:opacity .6s cubic-bezier(.2,.7,.2,1),
+             transform .6s cubic-bezier(.2,.7,.2,1),
+             filter .6s ease;
+  will-change:opacity,transform,filter;
+}
+.reveal.is-visible{ opacity:1; transform:none; filter:none; }
+
+/* card hover polish */
+.card-zoom{ transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.card-zoom:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 40px rgba(155,105,255,.18);
+  border-color:rgba(155,105,255,.45);
+}
+
+/* navbar shrink on scroll */
+.header {
+  height: 4rem; /* 16 */
+  transition: height .2s ease, background-color .2s ease, border-color .2s ease, backdrop-filter .2s ease;
+}
+.header.scrolled {
+  height: 3.5rem; /* 14 */
+  backdrop-filter: blur(10px);
+  background: var(--nav);
+  border-color: rgba(155, 105, 255, 0.35);
+}
+
+/* navbar shrink on scroll */
+.header {
+  height: 4rem;
+  transition: height .25s ease, background-color .25s ease, border-color .25s ease, backdrop-filter .25s ease;
+}
+.header.scrolled {
+  height: 3.5rem;
+  backdrop-filter: blur(10px);
+  background: var(--nav);
+  border-color: rgba(155, 105, 255, 0.35);
+}
