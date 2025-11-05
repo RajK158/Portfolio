@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import OwlAssistant from "./components/OwlAssistant";
-import BackgroundGlow from "./components/BackgroundGlow";
-import Reveal from "./components/Reveal";
-import Effects from "./components/Effects";
+import Navbar from "./components/Navbar.jsx";
+import OwlAssistant from "./components/OwlAssistant.jsx";
+import BackgroundGlow from "./components/BackgroundGlow.jsx";
+import Reveal from "./components/Reveal.jsx";
+import Effects from "./components/Effects.jsx";
 
 
 export default function App() {
