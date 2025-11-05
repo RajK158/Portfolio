@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import sig from "../assets/signature.png";
+
 
 export default function Navbar({ theme, setTheme }) {
   const [scrolled, setScrolled] = useState(false);
@@ -30,11 +30,12 @@ export default function Navbar({ theme, setTheme }) {
       <div className="max-w-screen-xl mx-auto px-4 h-full flex items-center justify-between">
         {/* Signature logo (click -> home) */}
         <a href="#home" className="flex items-center gap-2">
-          <img
-            src={sig}
-            alt="Raj Kundur Signature"
-            className="h-12 w-auto select-none pointer-events-none signature-img"
-          />
+        <img
+        src="/signature.png"
+        alt="Raj Kundur Signature"
+        className="h-12 w-auto select-none pointer-events-none signature-img"
+        />
+
         </a>
 
         {/* Navigation Links */}
