@@ -1,5 +1,5 @@
 # React + Vite
-Project - https://portfolio-eosin-mu-63.vercel.app/
+View Project - https://portfolio-eosin-mu-63.vercel.app/
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
