@@ -203,7 +203,7 @@ export default function App() {
       
     </div>
     <div className="mt-6 p-5 rounded-2xl border border-white/10 bg-[var(--card)] card-zoom">
-      <p className="font-medium">Software Engineer - JSPM University</p>
+      <p className="font-medium">Software Developer - Cloudtool (Partnered by Zoho)</p>
       <p className="text-sm text-[var(--muted)]">Jan 2024 — Nov 2024</p>
     </div>
     <div className="mt-6 p-5 rounded-2xl border border-white/10 bg-[var(--card)] card-zoom">
