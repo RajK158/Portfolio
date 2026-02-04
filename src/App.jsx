@@ -199,12 +199,12 @@ export default function App() {
   <Reveal>
      <div className="mt-6 p-5 rounded-2xl border border-white/10 bg-[var(--card)] card-zoom">
       <p className="font-medium">Software Engineer - California State University, Long Beach</p>
-      <p className="text-sm text-[var(--muted)]">Sept 2025 — Present</p>
+      <p className="text-sm text-[var(--muted)]">Jan 2025 — Present</p>
       
     </div>
     <div className="mt-6 p-5 rounded-2xl border border-white/10 bg-[var(--card)] card-zoom">
-      <p className="font-medium">Software Developer - Cloudtool (Partnered by Zoho)</p>
-      <p className="text-sm text-[var(--muted)]">Jan 2024 — Nov 2024</p>
+      <p className="font-medium">Software Developer - Cloudtool - (Zoho Partner)</p>
+      <p className="text-sm text-[var(--muted)]">Sept 2023 — Nov 2024</p>
     </div>
     <div className="mt-6 p-5 rounded-2xl border border-white/10 bg-[var(--card)] card-zoom">
       <p className="font-medium">Full Stack Software Developer - QSpiders</p>
