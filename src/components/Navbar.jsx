@@ -13,6 +13,7 @@ export default function Navbar({ theme, setTheme }) {
 
   const links = [
     { href: "#home", label: "Home" },
+    { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
     { href: "#experience", label: "Experience" },
     { href: "#education", label: "Education" },
