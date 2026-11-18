@@ -11,11 +11,11 @@ export default function Reveal({ children, delay = 0 }) {
       ([entry]) => {
         if (entry.isIntersecting) {
           el.style.transitionDelay = `${delay}ms`;
-          el.classList.add("is-visible");
+          el.classList.add("visible");
           io.unobserve(el);
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -10% 0px" }
+      { threshold: 0.08 }
     );
 
     io.observe(el);
